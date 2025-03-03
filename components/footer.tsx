@@ -18,7 +18,7 @@ export function Footer() {
           </Link>
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>

@@ -24,24 +24,31 @@ export function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setIsSubmitting(false);
-    }, 1500);
+    try {
+        // Simulate form submission
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        toast({
+            title: "Message sent!",
+            description: "Thank you for your message. I'll get back to you soon.",
+        });
+    } catch (error) {
+        toast({
+            title: "Error!",
+            description: "There was an issue sending your message. Please try again later.",
+        });
+    } finally {
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+        });
+        setIsSubmitting(false);
+    }
   };
 
   return (

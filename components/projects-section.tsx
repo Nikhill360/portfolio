@@ -13,8 +13,8 @@ const projects = [
     description: "A music streaming platform with a focus on independent artists and unique discovery features.",
     image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://example.com/harmony",
+    githubLink: "https://github.com/example/harmony",
   },
   {
     title: "Verdant",
