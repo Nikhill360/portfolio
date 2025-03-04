@@ -29,7 +29,7 @@ export function ContactSection() {
     setIsSubmitting(true);
     
     try {
-        // Simulate form submission
+        // Form submission logic
         await new Promise((resolve) => setTimeout(resolve, 1500));
         toast({
             title: "Message sent!",
@@ -62,8 +62,8 @@ export function ContactSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full   flex-col justify-center">
-          {/* <AnimatedSection delay={0.2} className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full flex-col justify-center">
+          <AnimatedSection delay={0.2} className="lg:col-span-2">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -129,9 +129,9 @@ export function ContactSection() {
                 </form>
               </CardContent>
             </Card>
-          </AnimatedSection> */}
+          </AnimatedSection>
 
-          <AnimatedSection delay={0.4} className=" ">
+          <AnimatedSection delay={0.4} className="">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
@@ -168,7 +168,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-medium">Location</h3>
-                    <p className="text-muted-foreground">kharkhoda,sonipat</p>
+                    <p className="text-muted-foreground">kharkhoda, sonipat</p>
                   </div>
                 </div>
               </CardContent>

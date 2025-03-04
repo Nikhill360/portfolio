@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "./ui/button";
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -29,12 +29,6 @@ export function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </a>
             </Button>
-            {/* <Button variant="ghost" size="icon" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
-            </Button> */}
             <Button variant="ghost" size="icon" asChild>
               <a href="https://www.instagram.com/riya_kohar25?igsh=MWRycWw3bWE0MzJqcw==" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-5 w-5" />

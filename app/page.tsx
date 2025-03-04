@@ -8,7 +8,7 @@ import { SkillsSection } from "@/components/skills-section";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen flex flex-col">
       <Navbar />
       <HeroSection />
       <AboutSection />

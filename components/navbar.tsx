@@ -39,7 +39,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="#home" className="text-xl font-bold" scroll={false}>
+        <Link href="#home" className="text-xl font-bold" scroll={true}>
           <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
             Riya Kohar
           </span>
